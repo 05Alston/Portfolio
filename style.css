@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap');
+
+:root{
+    --text-primary: rgb(200, 200, 200);
+    --text-nav: rgb(52, 68, 108);
+    --text-secondary: rgb(200, 200, 200);
+    --bg-primary: rgb(200, 200, 200);
+
+}
+*::before,
+*::after{
+    display: block;
+}
+
+::-webkit-scrollbar{
+    width: .5rem;
+}
+::-webkit-scrollbar-track{
+    background: black;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 0, 0);
+    border-radius: 0.5rem;
+}
+
+body{
+    margin: 0;
+    font-size: 16px;
+}
+
+nav{
+    background-color: aquamarine;
+    display:flex;
+    justify-content: space-between;
+    padding: 1.2rem 5rem;
+
+    align-items: center;
+    border-radius: 0 0 1rem 1rem;
+
+}
+.list-style{
+    display: inline-flex;
+    list-style: none;
+
+}
+
+.nav-link>a{
+    padding: 0 1rem;
+    text-decoration: none;
+    color: var(--text-nav);
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+}
+
+.banner img{ 
+    width: 100vw;
+}
+
+
+
+@media screen and (max-width:600px){
+    nav{
+        display: none;
+    }
+    
+}
