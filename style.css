@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap');
-
 :root{
     --text-primary: rgb(200, 200, 200);
-    --text-nav: rgb(52, 68, 108);
+    --text-nav: rgb(242, 242, 242);
     --text-secondary: rgb(200, 200, 200);
-    --bg-primary: rgb(200, 200, 200);
+    --bg-primary: rgb(52, 68, 108);
 
 }
 *::before,
@@ -24,22 +22,32 @@
 }
 
 body{
+    position: relative;
     margin: 0;
     font-size: 16px;
+    font-family: 'Comfortaa', cursive;
+    background-color: var(--bg-primary);
 }
 
+header{
+    position: fixed;
+    width: 100%;
+}
 nav{
-    background-color: aquamarine;
+    background-color: var(--bg-primary);
     display:flex;
     justify-content: space-between;
-    padding: 1.2rem 5rem;
-
+    padding: 1.2rem 3rem;
+    font-family: 'Concert One', cursive;
+    font-size: 20px;
     align-items: center;
     border-radius: 0 0 1rem 1rem;
+    color: var(--text-nav);
+    
 
 }
 .list-style{
-    display: inline-flex;
+    display: flex;
     list-style: none;
 
 }
@@ -48,14 +56,22 @@ nav{
     padding: 0 1rem;
     text-decoration: none;
     color: var(--text-nav);
-    font-family: 'Comfortaa', cursive;
-    font-weight: bold;
 }
 
-.banner img{ 
-    width: 100vw;
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center; 
+    color: var(--text-nav);
 }
-
+.banner>div{
+    display: flex; flex-direction: column; gap: 1rem;
+    text-align: left;
+}
+.banner img{
+    width: 60vw;
+}
 
 
 @media screen and (max-width:600px){
