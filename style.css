@@ -23,6 +23,7 @@
 }
 html{
     scroll-behavior: smooth;
+    scroll-padding: 200px;
 }
 body{
     position: relative;
@@ -30,8 +31,12 @@ body{
     font-size: 16px;
     font-family: 'Comfortaa', cursive;
     background-color: var(--bg-primary);
+    scroll-snap-type: both mandatory;
+    overflow-y: scroll;
 }
-
+section{
+    scroll-snap-align:center;
+}
 header{
     position: fixed;
     top: 0;

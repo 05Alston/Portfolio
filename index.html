@@ -18,7 +18,7 @@
             <input type="checkbox" class="nav-toggle" id="nav-toggle">
             <ol class="list-style">
                 <li class="nav-link active"><a href="#home">Home</a></li>
-                <li class="nav-link active"><a href="">Projects</a></li>
+                <li class="nav-link active"><a href="#AboutMe">About Me</a></li>
                 <li class="nav-link active"><a href="#Contacts">Contact Me</a></li>
             </ol>
             <label class="hamburger" for="nav-toggle">
@@ -26,8 +26,8 @@
             </label>
         </nav>
     </header>
-    <div id="home"class="skew"></div>
-    <div class="banner">
+    <div id="home" class="skew"></div>
+    <section class="banner section">
         <div>
             <p>Hi, My name is</p>
             <div>
@@ -36,10 +36,12 @@
             </div>
         </div>
         <img src="/Assets/Image.png" alt="Banner">
-    </div>
-    <div class="one">
+    </section>
+    <section id="AboutMe"class="one section">
         <h1>About Me</h1>
+        <h3></h3>
         <section class="languages">
+            <h3>Languages I know:</h3>
             <div class="text">
                 <ul>
                     <li>C</li>
@@ -53,40 +55,42 @@
             </div>
             <div class="images"></div>
         </section>
-    </div>
-    <footer id="Contacts">
-        <section>
-            <div class="info myInfo">
-                <h2>Alston Fernandes</h2>
-                <div>
-                    <h4>Address</h4>
-                    <p>My Addr</p>
+    </section>
+    <section class="section">
+        <footer id="Contacts">
+            <section>
+                <div class="info myInfo">
+                    <h2>Alston Fernandes</h2>
+                    <div>
+                        <h4>Address</h4>
+                        <p>My Addr</p>
+                    </div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+91 70451 98080</p>
+                    </div>
+                    <div>
+                        <h4>E-mail</h4>
+                        <p>0508alstonfernandes@gmail.com</p>
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li><a href="https://github.com/05Alston"><img src="Assets/github.svg" alt="Github"></a></li>
+                            <li><a href="https://www.linkedin.com/in/alston-fernandes-b28720220/"><img src="Assets/linkedin.svg" alt="LinkedIn"></a></li>
+                            <li><a href="https://www.instagram.com/fernands_alston/"><img src="Assets/instagram.svg" alt="instagram"></a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <h4>Phone</h4>
-                    <p>+91 70451 98080</p>
+                <div class="info contact">
+                    <h2>Question? Contact Me</h2>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="E-mail">
+                    <textarea name="Message" placeholder="Message" id="" cols="35" rows="10"></textarea>
+                    <input type="submit" value="Submit">
                 </div>
-                <div>
-                    <h4>E-mail</h4>
-                    <p>0508alstonfernandes@gmail.com</p>
-                </div>
-                <div class="social">
-                    <ul>
-                        <li><a href="https://github.com/05Alston"><img src="Assets/github.svg" alt="Github"></a></li>
-                        <li><a href="https://www.linkedin.com/in/alston-fernandes-b28720220/"><img src="Assets/linkedin.svg" alt="LinkedIn"></a></li>
-                        <li><a href="https://www.instagram.com/fernands_alston/"><img src="Assets/instagram.svg" alt="instagram"></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="info contact">
-                <h2>Question? Contact Me</h2>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="E-mail">
-                <textarea name="Message" placeholder="Message" id="" cols="35" rows="10"></textarea>
-                <input type="submit" value="Submit">
-            </div>
-        </section>
-    </footer>
+            </section>
+        </footer>
+    </section>
 </body>
 
 </html>
