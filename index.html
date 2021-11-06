@@ -17,16 +17,16 @@
             <p>Alston Fernandes</p>
             <input type="checkbox" class="nav-toggle" id="nav-toggle">
             <ol class="list-style">
-                <li class="nav-link active"><a href="">Home</a></li>
+                <li class="nav-link active"><a href="#home">Home</a></li>
                 <li class="nav-link active"><a href="">Projects</a></li>
-                <li class="nav-link active"><a href="">Contact Me</a></li>
+                <li class="nav-link active"><a href="#Contacts">Contact Me</a></li>
             </ol>
             <label class="hamburger" for="nav-toggle">
                 <div></div>
             </label>
         </nav>
     </header>
-    <div class="skew" style=""></div>
+    <div id="home"class="skew"></div>
     <div class="banner">
         <div>
             <p>Hi, My name is</p>
@@ -35,7 +35,7 @@
                 <p>I am a programmer.</p>
             </div>
         </div>
-        <img src="/Assets/Image.svg" alt="Banner">
+        <img src="/Assets/Image.png" alt="Banner">
     </div>
     <div class="one">
         <h1>About Me</h1>
@@ -54,21 +54,27 @@
             <div class="images"></div>
         </section>
     </div>
-    <footer>
+    <footer id="Contacts">
         <section>
             <div class="info myInfo">
                 <h2>Alston Fernandes</h2>
-                <div><p>Address Some Addr</p></div>
-                <hr>
-                <div><p>PhoneNumber</p></div>
-                <hr>
-                <div><p>E-mail E-mail</p></div>
-                <hr>
+                <div>
+                    <h4>Address</h4>
+                    <p>My Addr</p>
+                </div>
+                <div>
+                    <h4>Phone</h4>
+                    <p>+91 70451 98080</p>
+                </div>
+                <div>
+                    <h4>E-mail</h4>
+                    <p>0508alstonfernandes@gmail.com</p>
+                </div>
                 <div class="social">
                     <ul>
-                        <li><a href=""><img src="Assets/github.svg" alt="Github"></a></li>
-                        <li><a href=""><img src="Assets/linkedin.svg" alt="LinkedIn"></a></li>
-                        <li><a href=""><img src="Assets/instagram.svg" alt="instagram"></a></li>
+                        <li><a href="https://github.com/05Alston"><img src="Assets/github.svg" alt="Github"></a></li>
+                        <li><a href="https://www.linkedin.com/in/alston-fernandes-b28720220/"><img src="Assets/linkedin.svg" alt="LinkedIn"></a></li>
+                        <li><a href="https://www.instagram.com/fernands_alston/"><img src="Assets/instagram.svg" alt="instagram"></a></li>
                     </ul>
                 </div>
             </div>
@@ -76,7 +82,7 @@
                 <h2>Question? Contact Me</h2>
                 <input type="text" placeholder="Name">
                 <input type="email" placeholder="E-mail">
-                <textarea name="Message" placeholder="Message" id="" cols="35" rows="16" ></textarea>
+                <textarea name="Message" placeholder="Message" id="" cols="35" rows="10"></textarea>
                 <input type="submit" value="Submit">
             </div>
         </section>
