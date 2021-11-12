@@ -13,21 +13,24 @@
 
 <body>
     <header>
-        <nav>
+        <div class="nav-head">
             <p>Alston Fernandes</p>
-            <input type="checkbox" class="nav-toggle" id="nav-toggle">
-            <ol class="list-style">
-                <li class="nav-link active"><a href="#home">Home</a></li>
-                <li class="nav-link active"><a href="#AboutMe">About Me</a></li>
-                <li class="nav-link active"><a href="#Contacts">Contact Me</a></li>
-            </ol>
-            <label class="hamburger" for="nav-toggle">
-                <div></div>
-            </label>
-        </nav>
+            <div class="nav-content">
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#AboutMe">About Me</a>
+                <a href="#Contacts">Contact Me</a>
+                </div>
+            </div>
+        </div>
     </header>
     <div id="home" class="skew"></div>
-    <section class="banner section">
+    <section class="banner">
         <div>
             <p>Hi, My name is</p>
             <div>
@@ -35,28 +38,50 @@
                 <p>I am a programmer.</p>
             </div>
         </div>
-        <img src="/Assets/Image.png" alt="Banner">
+        <img src="assets/Image.png" alt="Banner">
     </section>
-    <section id="AboutMe"class="one section">
-        <h1>About Me</h1>
-        <h3></h3>
-        <section class="languages">
-            <h3>Languages I know:</h3>
-            <div class="text">
-                <ul>
-                    <li>C</li>
-                    <li>C++</li>
-                    <li>Java</li>
-                </ul>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                </ul>
+    <section id="AboutMe" class="one">
+        <div>
+            <h1>About Me</h1>
+
+            <div class="languages">
+                <h3>Languages I know:</h3>
+                <div class="text">
+                    <ul>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                    </ul>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
             </div>
-            <div class="images"></div>
-        </section>
+            <h1>My Projects</h1>
+                    <h3>Quiz</h3>
+                    <iframe frameborder="0"
+                        src="https://replit.com/@05Alston/JS-basics?embed=1&output=1#index.js"
+                        style="display: block; margin: 0 auto;"></iframe>
+        </div>
     </section>
-    <section class="section">
+
+
+    <div class="social">
+        <ul>
+            <li><a href="https://github.com/05Alston">
+                    <img src="assets/github.svg" alt="Github"></a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/alston-fernandes-b28720220/">
+                    <img src="assets/linkedin.svg" alt="LinkedIn"></a>
+            </li>
+            <li><a href="https://www.instagram.com/fernands_alston/">
+                    <img src="assets/instagram.svg" alt="instagram"></a>
+            </li>
+        </ul>
+    </div>
+
+
         <footer id="Contacts">
             <section>
                 <div class="info myInfo">
@@ -73,24 +98,17 @@
                         <h4>E-mail</h4>
                         <p>0508alstonfernandes@gmail.com</p>
                     </div>
-                    <div class="social">
-                        <ul>
-                            <li><a href="https://github.com/05Alston"><img src="Assets/github.svg" alt="Github"></a></li>
-                            <li><a href="https://www.linkedin.com/in/alston-fernandes-b28720220/"><img src="Assets/linkedin.svg" alt="LinkedIn"></a></li>
-                            <li><a href="https://www.instagram.com/fernands_alston/"><img src="Assets/instagram.svg" alt="instagram"></a></li>
-                        </ul>
-                    </div>
+
                 </div>
                 <div class="info contact">
                     <h2>Question? Contact Me</h2>
-                    <input type="text" placeholder="Name">
+                   <label for=""> <input type="text" ><span class="place-holder">Name</span></label>
                     <input type="email" placeholder="E-mail">
                     <textarea name="Message" placeholder="Message" id="" cols="35" rows="10"></textarea>
                     <input type="submit" value="Submit">
                 </div>
             </section>
         </footer>
-    </section>
 </body>
-
+<script src="./nav.js"></script>
 </html>
