@@ -101,6 +101,7 @@ header{
     position: relative;
     background-color: var(--bg-secondary);
     height:100px;
+    width: 100%;
     z-index: -1;
 }
 
@@ -256,8 +257,8 @@ iframe{
     }
 }
 @media screen and (max-width:600px){
-    .skew::after{
-        width: 200%;
+    .skew{
+        height: 250px;
     }
     .banner>img{
         width:80vw;
