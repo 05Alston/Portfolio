@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Concert+One&display=swap');
 :root{
     --text-primary: rgba(0, 0, 0, 0.514);
     --text-secondary: rgb(201, 201, 201);
@@ -147,14 +149,15 @@ header{
 }
 
 .laguages,
-.text,
-.images{
+.text{
     display: flex;
     justify-content: center;
 }
-.text>ul,
-.images>ul{
+.text>ul{
     list-style: none;
+}
+.text>ul>li>img{
+    width: 50px;
 }
 .one{
     position: relative;
@@ -269,9 +272,9 @@ footer section::after{
 .forms textarea:focus + .place-holder,
 .forms input:valid + .place-holder,
 .forms input:focus + .place-holder{
-    color: var(--text-nav);
-    top: 18px;
-    font-size: 10px;
+    color: #006D77;
+    top: 26px;
+    font-size: 9px;
 }
 iframe{
     width:70%; 
