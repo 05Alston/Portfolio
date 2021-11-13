@@ -1,6 +1,6 @@
 :root{
     --text-primary: rgba(0, 0, 0, 0.514);
-    --text-secondary: rgb(242, 242, 242);
+    --text-secondary: rgb(201, 201, 201);
     --text-nav: rgb(23, 71, 61);
     --bg-primary: #E1E4E5;
     --bg-secondary:rgb(131,197,190);
@@ -23,12 +23,13 @@
 }
 html{
     scroll-behavior: smooth;
-    scroll-padding: 200px;
+    scroll-padding: 110px;
 }
 body{
     position: relative;
     margin: 0;
     font-size: 16px;
+    color: var(--text-nav);
     font-family: 'Comfortaa', cursive;
     background-color: var(--bg-primary);
     overflow-x: hidden;
@@ -53,9 +54,13 @@ header{
 
 .nav-links {
     margin: 0 1rem;
+    column-gap: 1rem;
+    display: flex;
+    flex-direction: row;
 }
 .nav-content{
     display: flex;
+    align-items: flex-end;
 }
 .nav-links>a{
     position: relative;
@@ -94,8 +99,9 @@ header{
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: var(--bg-primary);
+    background-color: var(--text-nav);
 }
+#toggle{display: none;}
 
 .skew{
     position: relative;
@@ -228,20 +234,44 @@ footer section::after{
     filter: grayscale(0);
     box-shadow: 0 0 0.125 var(--text-nav);
 }
-.contact textarea{
+
+
+.forms,.submit-form{
+    position: relative;
+    font-size: 13px;
+    padding-top: 20px;
+    margin: 5px auto;
+}
+.forms input,.forms textarea
+,.submit-form{
+    font-size: 13px;
+    border: none;
+    appearance: none;
+    background: var(--bg-primary);
+    padding: 12px;
+    border-radius: 3px;
+    max-width: 350px;
+    min-width: 100px;
+    outline: none;
     resize: none;
 }
 
-
-input,textarea{
-    border: none;
-    appearance: none;
-    background: #999999;
-    padding: 12px;
-    border-radius: 3px;
-    min-width: 100px;
-    max-width: 350px;
-    outline: none;
+.forms .place-holder{
+    color: var(--text-primary);
+    position: absolute;
+    left: 12px;
+    top: calc(50% + 10px);
+    transform: translateY(-50%);
+    transition: top 250ms ease,
+    font-size 250ms ease,color 250ms ease;
+}
+.forms textarea:valid + .place-holder,
+.forms textarea:focus + .place-holder,
+.forms input:valid + .place-holder,
+.forms input:focus + .place-holder{
+    color: var(--text-nav);
+    top: 18px;
+    font-size: 10px;
 }
 iframe{
     width:70%; 
@@ -258,7 +288,7 @@ iframe{
 }
 @media screen and (max-width:600px){
     .skew{
-        height: 250px;
+        height: 150px;
     }
     .banner>img{
         width:80vw;
@@ -270,11 +300,15 @@ iframe{
         width:80%
     }
     .nav-content,
-    .list-style{
+    .list-style,.nav-links{
         flex-direction: column;
     }
     .nav-links{
         display: none;
+    }
+    #toggle:checked ~ .nav-links{
+        display: flex;
+        align-items: flex-end;
     }
     .hamburger>span {
         display: block;
@@ -283,7 +317,6 @@ iframe{
     .social{
         bottom: 0;
         left: 0px;
-        /* transition: 250ms ease; */
     }
     .social:hover{
         bottom: 0;

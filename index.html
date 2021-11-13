@@ -16,15 +16,16 @@
         <div class="nav-head">
             <p>Alston Fernandes</p>
             <div class="nav-content">
-                <button class="hamburger">
+                <input type="checkbox" id="toggle">
+                <label class="hamburger" for="toggle">
                     <span></span>
                     <span></span>
                     <span></span>
-                </button>
+                </label>
                 <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#AboutMe">About Me</a>
-                <a href="#Contacts">Contact Me</a>
+                    <a href="#home">Home</a>
+                    <a href="#AboutMe">About Me</a>
+                    <a href="#Contacts">Contact Me</a>
                 </div>
             </div>
         </div>
@@ -59,10 +60,9 @@
                 </div>
             </div>
             <h1>My Projects</h1>
-                    <h3>Quiz</h3>
-                    <iframe frameborder="0"
-                        src="https://replit.com/@05Alston/JS-basics?embed=1&output=1#index.js"
-                        style="display: block; margin: 0 auto;"></iframe>
+            <h3>Quiz</h3>
+            <iframe frameborder="0" src="https://replit.com/@05Alston/JS-basics?embed=1&output=1#index.js"
+                style="display: block; margin: 0 auto;"></iframe>
         </div>
     </section>
 
@@ -82,33 +82,42 @@
     </div>
 
 
-        <footer id="Contacts">
-            <section>
-                <div class="info myInfo">
-                    <h2>Alston Fernandes</h2>
-                    <div>
-                        <h4>Address</h4>
-                        <p>My Addr</p>
-                    </div>
-                    <div>
-                        <h4>Phone</h4>
-                        <p>+91 70451 98080</p>
-                    </div>
-                    <div>
-                        <h4>E-mail</h4>
-                        <p>0508alstonfernandes@gmail.com</p>
-                    </div>
+    <footer id="Contacts">
+        <section>
+            <div class="info myInfo">
+                <h2>Alston Fernandes</h2>
+                <div>
+                    <h4>Address</h4>
+                    <p>My Addr</p>
+                </div>
+                <div>
+                    <h4>Phone</h4>
+                    <p>+91 70451 98080</p>
+                </div>
+                <div>
+                    <h4>E-mail</h4>
+                    <p>0508alstonfernandes@gmail.com</p>
+                </div>
 
-                </div>
-                <div class="info contact">
-                    <h2>Question? Contact Me</h2>
-                   <label for=""> <input type="text" ><span class="place-holder">Name</span></label>
-                    <input type="email" placeholder="E-mail">
-                    <textarea name="Message" placeholder="Message" id="" cols="35" rows="10"></textarea>
-                    <input type="submit" value="Submit">
-                </div>
-            </section>
-        </footer>
+            </div>
+            <form class="info contact" action="mailto:0508alstonfernandes@gmail.com">
+                <h2>Question? Contact Me</h2>
+                <label class="forms"> 
+                    <input type="text" name="name" required>
+                    <span class="place-holder">Name</span>
+                </label>
+                <label class="forms"> 
+                    <input type="email" name="email" required>
+                    <span class="place-holder">E-mail</span>
+                </label>
+                <label class="forms"> 
+                    <textarea id="message"   cols="28" rows="10" required></textarea>
+                    <span class="place-holder">Message</span>
+                </label>
+                <input type="submit" value="Submit" class="submit-form">
+            </form>
+        </section>
+    </footer>
 </body>
-<script src="./nav.js"></script>
+
 </html>
