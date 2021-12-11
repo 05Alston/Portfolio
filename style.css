@@ -50,7 +50,7 @@ header{
 .nav-head{
     display:flex;
     justify-content: space-between;
-    padding: 1.2rem 3rem;
+    padding: 0 3rem;
     align-items: center;
 }
 
@@ -107,7 +107,6 @@ header{
 
 .skew{
     position: relative;
-    background-color: var(--bg-secondary);
     height:100px;
     width: 100%;
     z-index: -1;
@@ -116,9 +115,9 @@ header{
 .skew::after{
     position: absolute;
     width: 100%;
-    height: 1000%;
+    height: 700%;
     content: '';
-    background:inherit;
+    background: var(--bg-secondary);
     left:0;
     right:0;
     top: 1;
@@ -277,8 +276,10 @@ footer section::after{
     font-size: 9px;
 }
 iframe{
+    display: block; 
+    margin: 0 auto;
     width:70%; 
-    height:420px;
+    height:600px;
 }
 @media screen and (max-width:900px){
     .banner>div{
