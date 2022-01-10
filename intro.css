@@ -7,8 +7,8 @@
      :root {
         --bg-color:#83c5be;
         --text-color:#17473d;
-        --width: 0.5rem;
-        --height: 2rem;
+        --width: 1.2rem;
+        --height: 4rem;
         --curve: cubic-bezier(0, 1, 0.61, 1);
         --curve1: cubic-bezier(1, 0, 1, 0.5);
     }
@@ -29,7 +29,7 @@
         position: absolute;
         height: var(--height);
         width: var(--width);
-        top: 50vh;
+        top: 45vh;
         transform: translateY(-50%);
         background-color: var(--text-color);
     }
@@ -37,41 +37,41 @@
     .zero {
         height: var(--width);
         width: calc(var(--height) * 0.4);
-        left: calc(50% - 90px);
-        top: calc(50vh + 13px);
+        left: calc(50% - 145px);
+        top: calc(45vh + 23px);
         transform: skewX(-25deg) translateX(-50vw) scaleX(5);
         transform-origin: right;
         animation: horizontal 800ms var(--curve) forwards, go-up 600ms var(--curve1) forwards 850ms;
     }
     
     .One {
-        left: calc(50% - 72px);
-        transform: skewX(-25deg) translateY(50vh) scaleY(5);
+        left: calc(50% - 120px);
+        transform: skewX(-25deg) translateY(45vh) scaleY(5);
         transform-origin: top right;
         animation: positive-slope 800ms var(--curve) forwards 20ms, go-up 600ms var(--curve1) forwards 850ms;
     }
     
     .two {
-        left: calc(50% - 68px);
+        left: calc(50% - 115px);
         transform: skewX(5deg) translateY(-60vh) scaleY(5);
         transform-origin: bottom left;
         animation: negative-slope 800ms var(--curve) forwards 40ms, go-up 600ms var(--curve1) forwards 850ms;
     }
     
     .three {
-        left: calc(50% - 55px);
+        left: calc(50% - 94px);
         transform: skewX(-25deg) translateY(-60vh) scaleY(5);
         transform-origin: bottom left;
         animation: positive-slope 800ms var(--curve) forwards 20ms, go-up 600ms var(--curve1) forwards 860ms;
     }
     
     .four {
-        height: 0.5rem;
-        width: 1.5rem;
-        left: calc(50% - 50px);
-        top: calc(50vh + 22px);
+        height: var(--width);
+        width: calc(var(--height)*0.8);
+        left: calc(50% - 90px);
+        top: calc(45vh + 36px);
         border-radius: 0 0.5px 0.5px 0;
-        transform: skewX(-25deg) translateX(32px);
+        transform: skewX(-25deg) translateX(55px);
         transform-origin: left;
         animation: new 300ms var(--curve) forwards 400ms, go-up 600ms var(--curve1) forwards 860ms;
     }
@@ -83,14 +83,15 @@
     
     .five {
         position: absolute;
-        left: calc(50% - 25px);
-        top: 50vh;
+        left: calc(50% - 60px);
+        top: 45vh;
+        transform: skew(-4deg);
     animation:go-up 600ms var(--curve1) forwards 870ms
     }
     
     .six {
-        left: calc(50% + 32px);
-        transform: skewX(-25deg) translateY(50vh) scaleY(5);
+        left: calc(50% + 50px);
+        transform: skewX(-25deg) translateY(45vh) scaleY(5);
         transform-origin: top right;
         animation: positive-slope 800ms var(--curve) forwards 80ms, go-up 600ms var(--curve1) forwards 880ms;
     }
@@ -98,28 +99,27 @@
     .seven {
         height: var(--width);
         width: var(--height);
-        left: calc(50% + 20px);
+        left: calc(50% + 30px);
         transform: skewX(-25deg) translateX(+50vw) scaleX(5);
         transform-origin: left;
         animation: horizontal 800ms var(--curve) forwards, go-up 600ms var(--curve1) forwards 880ms;
     }
     
     .eight {
-        height: var(--height);
-        width: calc(var(--width) * 4.4);
         position: absolute;
-        left: calc(50% + 50px);
-        top: 50vh;
+        left: calc(50% + 58px);
+        top: 45vh;
         animation: go-up 600ms var(--curve1) forwards 900ms;
     }
     
     .circle-reveal {
         position: absolute;
-        left: calc(50% + 50px);
-        top: 50vh;
-        width: 32px;
-        height: 31px;
-        border-radius: 17px 9px 17px 9px;
+        left: calc(50% + 81px);
+        top: 45vh;
+        width: 54px;
+        height: 52px;
+        transform: skewX(-5deg);
+        border-radius: 50% 35%;
         background: var(--bg-color);
         animation: crcl-reveal 1000ms var(--curve)forwards 200ms, go-up 600ms var(--curve1) forwards 900ms;
     }
@@ -132,37 +132,37 @@
     
     .nein4 {
         position: absolute;
-        height: 2.1rem;
-        width: 2.1rem;
-        top: calc(50vh);
-        left: calc(50% - 20px);
+        height: 4rem;
+        width: 4rem;
+        top: calc(45vh);
+        left: calc(50% - 35px);
         background-color: var(--bg-color);
         transform: skewX(-25deg) translateX(0);
         transform-origin: center center;
-        animation: reveal 0.3s linear forwards 100ms, go-up 600ms var(--curve1) forwards 870ms;
+        animation: reveal 0.2s linear forwards 200ms, go-up 600ms var(--curve1) forwards 870ms;
     }
     @keyframes reveal {
         to{
-            transform:skewX(-25deg) translateY(2rem);
+            transform:skewX(-25deg) translateY(4.5rem);
         }
     }
     
     .nine {
-        left: calc(50% + 95px);
-        transform: skewX(-25deg) translateY(50vh) scaleY(5);
+        left: calc(50% + 155px);
+        transform: skewX(-25deg) translateY(45vh) scaleY(5);
         transform-origin: top right;
         animation: positive-slope 800ms var(--curve) forwards 60ms, go-up 600ms var(--curve1) forwards 920ms;
     }
     
     .ten {
-        left: calc(50% + 95px);
-        transform: skewX(5deg) translateY(50vh) scaleY(5);
+        left: calc(50% + 155px);
+        transform: skewX(5deg) translateY(45vh) scaleY(5);
         transform-origin: top right;
         animation: negative-slope 800ms var(--curve) forwards 40ms, go-up 600ms var(--curve1) forwards 920ms;
     }
     
     .eleven {
-        left: calc(50% + 100px);
+        left: calc(50% + 160px);
         transform: skewX(-25deg) translateY(-60vh) scaleY(5);
         transform-origin: bottom left;
         animation: positive-slope 800ms var(--curve) forwards 20ms, go-up 600ms var(--curve1) forwards 920ms;
@@ -193,11 +193,13 @@
 }
 
 
-@keyframes go-up {
+@keyframes go-up{
+    70%{
+        filter: opacity(1);
+    }
     to{
         filter: opacity(0);
         transform: translateY(-25vh);
     }
 }
-    /* 4,5,8 remaining */
 
