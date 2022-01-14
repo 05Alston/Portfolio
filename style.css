@@ -8,11 +8,11 @@
     font-style: normal;
 }
 :root{
-    --text-primary: rgba(0, 0, 0, 0.514);
-    --text-secondary: rgb(201, 201, 201);
-    --text-nav: rgb(23, 71, 61);
+    --text-primary: #00000083;
+    --text-secondary: #c9c9c9;
+    --text-nav: #17473d;
     --bg-primary: #E1E4E5;
-    --bg-secondary:rgb(131,197,190);
+    --bg-secondary:#83c5be;
 
 }
 *::before,
@@ -247,6 +247,7 @@ header{
 .info{
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 100px;
 }
 .forms,.submit-form{
