@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="intro.css">
+    <link rel="stylesheet" href="style.css">
     <title>Contact</title>
 </head>
+
 <body>
     <div class="intro" />
     <header>
@@ -20,12 +25,28 @@
                 </label>
                 <div class="nav links">
                     <a href="index.html#">Home</a>
-                    <a href="index.html#AboutMe">About Me</a>
                     <a href="projects.html">My Projects</a>
                     <a href="#">Contact Me</a>
                 </div>
             </div>
         </div>
     </header>
+    <form class="info" action="https://formspree.io/f/mwkypgwb" method="POST">
+        <h2>Question? Contact Me</h2>
+        <label class="forms">
+            <input type="text" name="name" required>
+            <span class="place-holder">Name</span>
+        </label>
+        <label class="forms">
+            <input type="email" name="email" required>
+            <span class="place-holder">E-mail</span>
+        </label>
+        <label class="forms">
+            <textarea id="message" name="message" cols="28" rows="5" required></textarea>
+            <span class="place-holder">Message</span>
+        </label>
+        <input type="submit" value="Submit" class="submit-form">
+    </form>
 </body>
+
 </html>

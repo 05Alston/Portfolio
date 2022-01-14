@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Concert+One&display=swap');
 
 @font-face {
     font-family: 'Angelic Child';
@@ -44,7 +44,7 @@ body{
     overflow-x: hidden;
 }
 header{
-    font-family: 'Angelic Child', cursive;
+    font-family: 'Concert One', cursive;
     font-size: 20px;
     background-color: var(--bg-secondary);
     color: var(--text-nav);
@@ -59,6 +59,14 @@ header{
     justify-content: space-between;
     padding: 0 3rem;
     align-items: center;
+}
+.nav-head>p{
+    font-family: 'Angelic Child', cursive;
+    transform: skew(4deg);
+    transition: all 200ms linear ;
+}
+.nav-head>p:hover{
+    text-shadow: 0px 0px 2px #006D77;
 }
 
 .nav,.links{
@@ -129,7 +137,7 @@ header{
     right:0;
     top:0;
     transform-origin: top left;
-    transform: skewY(-14deg);
+    transform: skewY(-10deg);
 
 }
 
@@ -144,76 +152,70 @@ header{
 .banner>div{
     display: flex; 
     flex-direction: column; 
-    gap: 1rem;
     margin-left: 1rem;
     margin-bottom: 2rem;
     text-align: left;
 }
+
+.my-name{
+    font-family: 'Angelic Child', cursive;
+    font-size: 35px;
+    line-height: 0.5rem;
+    margin-top: 20px;
+}
+
 .banner img{
     width: 55vw;
 }
-
-.laguages,
+.languages{
+    margin-top:4rem;
+}
+.languages,
 .text{
+
     display: flex;
     justify-content: center;
 }
 .text>ul{
     list-style: none;
 }
-.text>ul>li>img{
+.text img{
     width: 50px;
 }
 .one{
     position: relative;
-    width: 100%;
     text-align: center;
+    margin:0 7rem;
 }
-footer section{
+.footer{
     position: relative;
-    padding-bottom: 2rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
     background:var(--bg-secondary);
-
+    padding:10rem 0;
+    margin: 0 0;
+    font-size: 25px;
 }
-footer p{
-    color: var(--text-primary);
-}
-footer div{
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-    column-gap: 5px;
-}
-footer section::after{
+.footer::after{
     position: absolute;
     width: 100%;
     height: 100%;
     content: '';
     background:var(--bg-secondary);
     left:0;
-    bottom: 0;
+    top: 0;
     transform-origin: bottom left;
-    transform: skewY(-15deg);
+    transform: skewY(-10deg);
     z-index: -1;
-}
-.info{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    row-gap: 0.4rem;
 }
 
 .social{
     position: fixed;
-    bottom: -0px;
+    bottom: 50px;
     z-index: 99;
     transition: 250ms ease;
     opacity: 0;
-}
-.social:hover{
-    bottom: 50px;
 }
 .social::after{
     content: '';
@@ -230,20 +232,23 @@ footer section::after{
     display: inline-flex;
     flex-direction: column;
     row-gap: 1rem;
-    
 }
-.social img{
-    width: 30px;
-    padding: 5px;
-    filter: grayscale(1);
-    transition: filter 100ms ease;
+.social i{
+    font-size:35px;
+    color: #333;
+    transition: all 200ms ease;
 }
-.social img:hover{
-    filter: grayscale(0);
-    box-shadow: 0 0 0.125 var(--text-nav);
+.social i:hover{
+    color: #006D77;
+    text-shadow: 0px 0px 3px #006D77;
 }
 
-
+/* Contact Page CSS */
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
 .forms,.submit-form{
     position: relative;
     font-size: 13px;
@@ -281,16 +286,14 @@ footer section::after{
     top: 26px;
     font-size: 9px;
 }
-iframe{
-    display: block; 
-    margin: 0 auto;
-    width:70%; 
-    height:600px;
-}
+
 @media screen and (max-width:900px){
     .banner>div{
         font-size: 13px;
         margin-left: 0rem;
+    }
+    .my-name{
+        font-size: 25px;
     }
     .banner>img{
         width:50vw;
@@ -300,15 +303,15 @@ iframe{
     .banner>img{
         width:80vw;
     }
-    footer section,.banner{
+    .my-name{
+        font-size: 34px;
+    }
+    .banner, .links,.info>div,.nav-content,
+    .list-style,.nav,.footer{
         flex-direction: column;
     }
-    iframe{
-        width:80%
-    }
-    .nav-content,
-    .list-style,.nav{
-        flex-direction: column;
+    .footer{
+        gap: 3rem;
     }
     .nav{
         display: none;
@@ -323,11 +326,8 @@ iframe{
     }
     .social{
         bottom: 0;
-        left: 0px;
     }
-    .social:hover{
-        bottom: 0;
-    }
+  
     .social ul{
         flex-direction: row;
         column-gap: 1rem;
@@ -336,7 +336,7 @@ iframe{
         width: 100px;
         height: 3px;
         top: 50%;
-        left:-60px;
+        left:-65px;
     }
     .hamburger.active>span:nth-child(2) {
         opacity: 0;

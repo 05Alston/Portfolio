@@ -151,21 +151,21 @@
         left: calc(50% + 155px);
         transform: skewX(-25deg) translateY(45vh) scaleY(5);
         transform-origin: top right;
-        animation: positive-slope 800ms var(--curve) forwards 60ms, go-up 600ms var(--curve1) forwards 920ms;
+        animation: positive-slope 800ms var(--curve) forwards 60ms, go-up 600ms var(--curve1) forwards 900ms;
     }
     
     .ten {
         left: calc(50% + 155px);
         transform: skewX(5deg) translateY(45vh) scaleY(5);
         transform-origin: top right;
-        animation: negative-slope 800ms var(--curve) forwards 40ms, go-up 600ms var(--curve1) forwards 920ms;
+        animation: negative-slope 800ms var(--curve) forwards 40ms, go-up 600ms var(--curve1) forwards 900ms;
     }
     
     .eleven {
         left: calc(50% + 160px);
         transform: skewX(-25deg) translateY(-60vh) scaleY(5);
         transform-origin: bottom left;
-        animation: positive-slope 800ms var(--curve) forwards 20ms, go-up 600ms var(--curve1) forwards 920ms;
+        animation: positive-slope 800ms var(--curve) forwards 20ms, go-up 600ms var(--curve1) forwards 900ms;
     }
     @keyframes horizontal{
     60%{
